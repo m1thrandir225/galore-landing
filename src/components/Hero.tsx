@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Hero: React.FC = () => {
     return (
-        <div className={"w-full bg-main h-[500px] grid grid-cols-2 grid-rows-1 p-4 rounded-[24px] overflow-hidden"}>
+        <div className={"w-full bg-main h-[500px] grid grid-cols-2 grid-rows-1 p-4 rounded-[24px] overflow-hidden my-[80px]"}>
             <div
                 className={"w-full h-full flex flex-col items-start justify-center max-w-[80%] mx-auto gap-4 overflow-hidden"}>
                 <motion.h1
