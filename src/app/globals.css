@@ -3,8 +3,40 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FFF8F6;
+  --on-background: #ffffff;
+  --main: #8F4B3A;
+  --on-main: #FFFFFF;
+  --secondary: #77574F;
+  --on-secondary: #FFFFFF;
+  --teritary: #6D5D2E;
+  --on-teritary: #FFFFFF;
+  --main-container: #FFDAD2;
+  --on-main-container: #3A0A02;
+  --secondary-container: #FFDAD2;
+  --on-secondary-container: #2C1510;
+  --teritary-container: #F7E1A6;
+  --on-teritary-container: #241A00;
+  --outline: #85736F;
+  --error: #BA1A1A;
+}
+[data-theme="dark"] {
+  --background: #1A110F;
+  --on-background: #ffffff;
+  --main: #FFB4A2;
+  --on-main: #561F11;
+  --secondary: #E7BDB3;
+  --on-secondary: #442A23;
+  --teritary: #6D5D2E;
+  --on-teritary: #3C2F04;
+  --main-container: #723425;
+  --on-main-container: #FFDAD2;
+  --secondary-container: #5D4038;
+  --on-secondary-container: #FFDAD2;
+  --teritary-container: #544519;
+  --on-teritary-container: #F7E1A6;
+  --outline: #A08C88;
+  --error: #FFB4AB;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,7 +47,7 @@
 }
 
 body {
-  color: var(--foreground);
+  color: var(--on-background);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
