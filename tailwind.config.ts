@@ -26,6 +26,11 @@ export default {
         outline: "var(--outline)",
         error: "var(--error)",
       },
+      fontFamily: {
+        satoshi: "var(--font-satoshi)",
+        benzin: "var(--font-benzin)",
+        stardom: "var(--font-stardom)",
+      }
     },
   },
   plugins: [],
