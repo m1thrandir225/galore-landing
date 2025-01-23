@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss";
+import type {Config} from "tailwindcss";
 
 export default {
   content: [
@@ -6,11 +6,12 @@ export default {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
         background: "var(--background)",
-        onBackground: "var(--onBackground)",
+        onBackground: "var(--on-background)",
         main: "var(--main)",
         onMain: "var(--on-main)",
         secondary: "var(--secondary)",
@@ -30,7 +31,7 @@ export default {
         satoshi: "var(--font-satoshi)",
         benzin: "var(--font-benzin)",
         stardom: "var(--font-stardom)",
-      }
+      },
     },
   },
   plugins: [],

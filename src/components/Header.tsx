@@ -1,12 +1,17 @@
+"use client";
 import React from "react";
 import Logo from "@/components/Logo";
+import DarkModeToggle from "./DarkModeToggle";
 
 const Header: React.FC = () => {
-    return (
-        <div className={"w-full py-4 flex items-center justify-center"}>
-            <Logo size={48}/>
-        </div>
-    )
-}
+  return (
+    <div className={"w-full py-4 flex items-center justify-center relative"}>
+      <Logo size={48} />
+      <div className="absolute right-0">
+        <DarkModeToggle />
+      </div>
+    </div>
+  );
+};
 
 export default Header;
