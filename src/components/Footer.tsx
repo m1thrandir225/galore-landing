@@ -6,10 +6,10 @@ import { GithubIcon } from "lucide-react";
 
 const Footer: React.FC = () => {
   return (
-    <div className="w-full p-4 flex flex-row items-center justify-between rounded-2xl bg-main my-4">
+    <div className="w-full p-4 flex flex-col md:flex-row items-center justify-between rounded-2xl bg-main my-4">
       <Logo size={36} className="text-onMain" />
-      <div className="flex flex-row gap-4 items-center">
-        <p className="text-onMain">
+      <div className="flex flex-col md:flex-row gap-4 items-center">
+        <p className="!text-onMain md:prose text-[12px]">
           © 2025 by Sebastijan Zindl. All rights reserved.
         </p>
         <Link

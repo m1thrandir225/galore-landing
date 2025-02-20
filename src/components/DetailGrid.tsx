@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useRef } from "react";
 import { motion } from "motion/react";
 
@@ -20,7 +21,7 @@ const DetailImageBlock: React.FC<DetailImageBlockProps> = (props) => {
   const { imageURL, index, containerRef } = props;
 
   return (
-    <div className="w-1/2 mx-auto h-[450px] border-2 border-mainContainer rounded-[24px] relative overflow-visible group hover:bg-mainContainer transition-all ease-in-out duration-200">
+    <div className="w-[75%] md:w-1/2 mx-auto h-[450px] border-2 border-mainContainer rounded-[24px] relative overflow-visible group hover:bg-mainContainer transition-all ease-in-out duration-200">
       <motion.div
         className="absolute inset-0"
         initial={{
@@ -61,7 +62,7 @@ const DetailTextBlock: React.FC<DetailTextBlockProps> = (props) => {
   return (
     <div className="w-full h-[450px] bg-mainContainer rounded-[24px] relative p-8 flex flex-col gap-4 items-center justify-center">
       <motion.h2
-        className="text-[28px]  font-bold text-main font-stardom max-w-[80%] mx-auto text-center"
+        className="text-[24px] md:text-[28px]  font-bold text-main font-stardom md:max-w-[80%] mx-auto text-center"
         initial={{
           y: index % 2 == 0 ? 100 : -100,
           opacity: 0,
@@ -82,7 +83,7 @@ const DetailTextBlock: React.FC<DetailTextBlockProps> = (props) => {
         {title}
       </motion.h2>
       <motion.p
-        className="prose text-onMainContainer font-satoshi max-w-[80%] lg:prose-lg mx-auto"
+        className="prose-sm md:prose text-onMainContainer font-satoshi max-w-[80%] lg:prose-lg mx-auto"
         initial={{
           y: index % 2 == 0 ? 100 : -100,
           opacity: 0,
@@ -142,7 +143,7 @@ const DetailGrid: React.FC = () => {
     <div
       ref={containerRef}
       className={
-        "w-full container mx-auto grid grid-cols-2 grid-rows-2 gap-y-[64px] py-[120px]"
+        "w-full mx-auto grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-y-[64px] my-12 md:py-[120px]"
       }
     >
       {blocks.map((block, index) => {
