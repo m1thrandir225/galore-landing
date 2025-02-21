@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss";
+import type {Config} from "tailwindcss";
 import typography from "@tailwindcss/typography";
 export default {
   content: [
@@ -16,7 +16,7 @@ export default {
         onMain: "var(--on-main)",
         secondary: "var(--secondary)",
         onSecondary: "var(--on-secondary)",
-        tertiary: "var(--tertiary)",
+        tertiary: "var(--teritary)",
         onTertiary: "var(--on-tertiary)",
         mainContainer: "var(--main-container)",
         onMainContainer: "var(--on-main-container)",

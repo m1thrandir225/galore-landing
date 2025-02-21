@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Logo from "@/components/Logo";
+import Logo from "@/components/Global/Logo";
 import DarkModeToggle from "./DarkModeToggle";
 
 const Header: React.FC = () => {

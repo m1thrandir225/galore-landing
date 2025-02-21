@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Logo from "./Logo";
+import Logo from "@/components/Global/Logo";
 import Link from "next/link";
 import { GithubIcon } from "lucide-react";
 

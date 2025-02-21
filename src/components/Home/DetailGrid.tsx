@@ -83,7 +83,7 @@ const DetailTextBlock: React.FC<DetailTextBlockProps> = (props) => {
         {title}
       </motion.h2>
       <motion.p
-        className="prose-sm md:prose text-onMainContainer font-satoshi max-w-[80%] lg:prose-lg mx-auto"
+        className="prose-sm md:prose !text-onMainContainer font-satoshi max-w-[80%] lg:prose-lg mx-auto"
         initial={{
           y: index % 2 == 0 ? 100 : -100,
           opacity: 0,
@@ -143,7 +143,7 @@ const DetailGrid: React.FC = () => {
     <div
       ref={containerRef}
       className={
-        "w-full mx-auto grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-y-[64px] my-12 md:py-[120px]"
+        "w-full mx-auto grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-y-[64px] py-12 md:py-[120px]"
       }
     >
       {blocks.map((block, index) => {

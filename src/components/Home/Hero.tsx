@@ -1,5 +1,5 @@
 "use client";
-import { motion } from "motion/react";
+import {motion} from "motion/react";
 import Image from "next/image";
 
 const Hero: React.FC = () => {
@@ -33,7 +33,9 @@ const Hero: React.FC = () => {
           Discover your next cocktail.
         </motion.h1>
         <motion.p
-          className={"prose-sm sm:prose-lg font-satoshi text-onMain opacity-75"}
+          className={
+            "prose-sm sm:prose-lg font-satoshi !text-onMain opacity-75"
+          }
           initial={{
             opacity: 0,
             y: -50,
@@ -53,32 +55,10 @@ const Hero: React.FC = () => {
           Save your go-to recipes, and unleash your creativity with AI-driven
           cocktail generation tailored just for you.
         </motion.p>
-        <motion.button
-          className={
-            "text-onMainContainer self-center md:self-start font-satoshi font-bold py-2 px-4 md:py-4 md:px-8 rounded-[16px] bg-mainContainer"
-          }
-          initial={{
-            opacity: 0,
-            y: -100,
-          }}
-          whileHover={{
-            opacity: 0.75,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
-          transition={{
-            type: "spring",
-            bounce: 0.5,
-          }}
-        >
-          Coming Soon
-        </motion.button>
       </div>
       <motion.div
         className={
-          "w-full h-full flex flex-col items-start justify-start relative"
+          "w-full h-full flex flex-col items-start justify-start relative order-1 md:order-2"
         }
         initial={{
           y: 100,
