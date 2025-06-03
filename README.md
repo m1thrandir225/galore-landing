@@ -10,5 +10,6 @@ The following repository is a part of a larger project named Galore:
 - [**Check out the Android App**](https://github.com/m1thrandir225/galore-android)
 - [**Check out the iOS App**](https://github.com/m1thrandir225/galore-ios)
 - [**Check out the Admin Dashboard(WIP)**](https://github.com/m1thrandir225/galore-dashboard)
-
-License MIT © [Sebastijan Zindl]()
+- 
+---
+License MIT © [Sebastijan Zindl](./LICENSE)
